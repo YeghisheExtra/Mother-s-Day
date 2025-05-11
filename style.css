@@ -1,0 +1,163 @@
+body {
+    background-color: #ff9a9e;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.h1 {
+    opacity: 0;
+    margin: 0;
+    color: #333;
+    font-size: 280%;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    animation: animation 2s ease forwards;
+}
+
+.h1:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.h1:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.h1:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.flowers {
+    filter: drop-shadow(0 0 20px red);
+    width: 100%;
+    height: 100%;
+}
+
+.flowersContainer {
+    opacity: 0;
+    animation: animation 2s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(255, 232, 201);
+    height: 100%;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 4s;
+}
+
+.messageHeading {
+    opacity: 0;
+    text-decoration: underline;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 4.2s;
+}
+
+.messageText1, .messageText2 {
+  opacity: 0;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4.5s;
+}
+
+.messageText2 {
+    animation-delay: 4.6s;
+}
+
+.happyMothersDay {
+  opacity: 0;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  color: #ff006f;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4.9s;
+}
+
+.blueRose {
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 0, 93));
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 5s;
+}
+
+.footer {
+    transform: translate(0, -40px);
+    margin-top: 120px;
+}
+
+.footerText1 {
+    opacity: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 5.5s;
+}
+
+.footerText2 {
+    opacity: 0;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 5.6s;
+}
